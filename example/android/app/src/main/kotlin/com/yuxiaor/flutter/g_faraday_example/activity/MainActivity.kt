@@ -9,23 +9,23 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main2)
     }
 
-    override fun onStart() {
-        super.onStart()
-
-        // 跳转到 flutter `home` 路由
-        val intent = FirstFlutterActivity.build(this)
-
-        // 直接打开flutter 页面
-        startActivity(intent)
-
-        //
-        finish()
-
-        // 阻止动画
-        overridePendingTransition(0, 0)
-
-    }
+//    override fun onStart() {
+//        super.onStart()
+//
+//        // 跳转到 flutter `home` 路由
+//        val intent = FirstFlutterActivity.build(this)
+//
+//        // 直接打开flutter 页面
+//        startActivity(intent)
+//
+//        //
+//        finish()
+//
+//        // 阻止动画
+//        overridePendingTransition(0, 0)
+//
+//    }
 }
